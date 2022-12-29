@@ -4,7 +4,7 @@
 <h3> 👨🏼‍💻 About Me </h3>
 
 - 🔭 &nbsp; I'm currently learning about [React Native](https://reactnative.dev/).
-- 🤔 &nbsp; Exploring new technologies and developing software solutions and quick hacks.
+- 🤔 &nbsp; Exploring new technologies and developing software solutions.
 - 💼 &nbsp; Golang, Kotlin, Javascript developer.
 - 🌱 &nbsp; Enthusiast in Fast, Reliable, Testable code.
 - 🍫 &nbsp; Aficionado for sugary treats, especially snickers

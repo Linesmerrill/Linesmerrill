@@ -33,4 +33,8 @@
   &nbsp; <a href="https://linesmerrill.github.io/MerrillLines/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/color/48/000000/web-design.png" width="50" /></a>
 </p>
 
+#### **Visitor Count**
+ ![Visitor Count](https://profile-counter.glitch.me/{linesmerrill}/count.svg)
+
+
 ⭐️ From [linesmerrill](https://github.com/linesmerrill)

@@ -1,5 +1,5 @@
 <h2> Hi, I’m Merrill. <img alt="GIF" src="https://user-images.githubusercontent.com/15384983/209981182-0dc0de41-80d7-42d8-b005-a68e9d0e779c.gif" width="25"/> </h2>
-<img align="right" alt="GIF" src="https://user-images.githubusercontent.com/15384983/209981014-6ecdb9e1-aa45-477d-8d3a-1515ef0c0c63.gif" width="500"/>
+<img align="right" alt="GIF" src="https://user-images.githubusercontent.com/15384983/209981014-6ecdb9e1-aa45-477d-8d3a-1515ef0c0c63.gif" width="400"/>
 
 <h3> 👨🏼‍💻 About Me </h3>
 

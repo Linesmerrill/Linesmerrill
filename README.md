@@ -22,7 +22,7 @@
 
 </br>
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Linesmerrill&layout=compact&text_color=daf7dc&bg_color=151515)](https://github-readme-stats.vercel.app/api/top-langs/?username=Linesmerrill&layout=compact&text_color=daf7dc&bg_color=151515)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Linesmerrill&layout=compact&text_color=daf7dc&bg_color=151515&&langs_count=5&hide=html,groff,ejs,css,scss)](https://github-readme-stats.vercel.app/api/top-langs/?username=Linesmerrill&layout=compact&text_color=daf7dc&bg_color=151515&&langs_count=5&hide=html,groff,ejs,css,scss)
 
 <h3> 🤝 Connect with Me </h3>
 

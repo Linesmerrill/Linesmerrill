@@ -18,17 +18,17 @@
 
 <br>
 
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=linesmerrill&include_all_commits=true&count_private=true&show_icons=true&line_height=20&title_color=7A7ADB&icon_color=2234AE&text_color=D3D3D3&bg_color=0,000000,130F40)](https://github-readme-stats.vercel.app/api?username=linesmerrill&include_all_commits=true&count_private=true&show_icons=true&line_height=20&title_color=7A7ADB&icon_color=2234AE&text_color=D3D3D3&bg_color=0,000000,130F40)
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Linesmerrill&include_all_commits=true&count_private=true&show_icons=true&line_height=20&title_color=7A7ADB&icon_color=2234AE&text_color=D3D3D3&bg_color=0,000000,130F40)](https://github-readme-stats.vercel.app/api?username=linesmerrill&include_all_commits=true&count_private=true&show_icons=true&line_height=20&title_color=7A7ADB&icon_color=2234AE&text_color=D3D3D3&bg_color=0,000000,130F40)
 
 </br>
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=linesmerrill&layout=compact&text_color=daf7dc&bg_color=151515)](https://github-readme-stats.vercel.app/api/top-langs/?username=linesmerrill&layout=compact&text_color=daf7dc&bg_color=151515)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Linesmerrill&layout=compact&text_color=daf7dc&bg_color=151515)](https://github-readme-stats.vercel.app/api/top-langs/?username=Linesmerrill&layout=compact&text_color=daf7dc&bg_color=151515)
 
 <h3> 🤝 Connect with Me </h3>
 
 <p>
   &nbsp; <a href="https://www.linkedin.com/in/linesmerrill/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/color/48/000000/linkedin.png" width="50" /></a>
-  &nbsp; <a href="mailto:linesmerrill+github-profile@gmail.com" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/color/48/000000/gmail.png" width="50" /></a>
+  &nbsp; <a href="mailto:linesmerrill+githubprofile@gmail.com" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/color/48/000000/gmail.png" width="50" /></a>
   &nbsp; <a href="https://twitter.com/merrill_lines" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/color/48/000000/twitter.png" width="50" /></a>
   &nbsp; <a href="https://linesmerrill.github.io/MerrillLines/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/color/48/000000/web-design.png" width="50" /></a>
 </p>

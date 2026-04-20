@@ -3,15 +3,15 @@
 
 <h3> 👨🏼‍💻 About Me </h3>
 
-- 🔭 &nbsp; I'm currently learning about [React Native](https://reactnative.dev/).
+- 🔭 &nbsp; I'm currently learning about LLMs, Vector Search, and AI Automation Pipelines.
 - 🤔 &nbsp; Exploring new technologies and developing software solutions.
-- 💼 &nbsp; Golang, Kotlin, Javascript developer.
+- 💼 &nbsp; Golang, Kotlin, Javascript, Java developer - Mostly leveraging AI to write all code now'a days.
 - 🌱 &nbsp; Enthusiast in Fast, Reliable, Testable code.
 - 🍫 &nbsp; Aficionado for sugary treats, especially snickers
 
 <h3> 🛠️ Tech Stack </h3>
 
-- 💻 &nbsp; Golang | Kotlin | Javascript | Python
+- 💻 &nbsp; Claude Code: Golang | Kotlin | Javascript | Python
 - 🌐 &nbsp; K8s | Openshift
 - 🛢️ &nbsp; MySql | S3 | Couchbase | MongoDB
 - 🔧 &nbsp; IntelliJ | Visual Studio Code | Git

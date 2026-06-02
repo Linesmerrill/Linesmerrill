@@ -30,11 +30,11 @@
   &nbsp; <a href="https://www.linkedin.com/in/linesmerrill/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/color/48/000000/linkedin.png" width="50" /></a>
   &nbsp; <a href="mailto:linesmerrill+githubprofile@gmail.com" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/color/48/000000/gmail.png" width="50" /></a>
   &nbsp; <a href="https://twitter.com/merrill_lines" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/color/48/000000/twitter.png" width="50" /></a>
-  &nbsp; <a href="https://linesmerrill.github.io/MerrillLines/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/color/48/000000/web-design.png" width="50" /></a>
+  &nbsp; <a href="https://linesmerrill.com" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/color/48/000000/web-design.png" width="50" /></a>
 </p>
 
 #### **Visitor Count**
- ![Visitor Count](https://komarev.com/ghpvc/?username=Linesmerrill&label=Visitor%20Count&color=7A7ADB&style=flat)
 
+![Visitor Count](https://komarev.com/ghpvc/?username=Linesmerrill&label=Visitor%20Count&color=7A7ADB&style=flat)
 
 ⭐️ From [linesmerrill](https://github.com/linesmerrill)

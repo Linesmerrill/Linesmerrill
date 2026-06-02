@@ -18,11 +18,11 @@
 
 <br>
 
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Linesmerrill&include_all_commits=true&count_private=true&show_icons=true&line_height=20&title_color=7A7ADB&icon_color=2234AE&text_color=D3D3D3&bg_color=0,000000,130F40)](https://github-readme-stats.vercel.app/api?username=linesmerrill&include_all_commits=true&count_private=true&show_icons=true&line_height=20&title_color=7A7ADB&icon_color=2234AE&text_color=D3D3D3&bg_color=0,000000,130F40)
+[![GitHub Stats](https://github-readme-stats-sigma-five.vercel.app/api?username=Linesmerrill&include_all_commits=true&count_private=true&show_icons=true&line_height=20&title_color=7A7ADB&icon_color=2234AE&text_color=D3D3D3&bg_color=0,000000,130F40)](https://github-readme-stats-sigma-five.vercel.app/api?username=linesmerrill&include_all_commits=true&count_private=true&show_icons=true&line_height=20&title_color=7A7ADB&icon_color=2234AE&text_color=D3D3D3&bg_color=0,000000,130F40)
 
 </br>
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Linesmerrill&layout=compact&text_color=daf7dc&bg_color=151515&&langs_count=5&hide=html,groff,ejs,css,scss)](https://github-readme-stats.vercel.app/api/top-langs/?username=Linesmerrill&layout=compact&text_color=daf7dc&bg_color=151515&&langs_count=5&hide=html,groff,ejs,css,scss)
+[![Top Langs](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Linesmerrill&layout=compact&text_color=daf7dc&bg_color=151515&&langs_count=5&hide=html,groff,ejs,css,scss)](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Linesmerrill&layout=compact&text_color=daf7dc&bg_color=151515&&langs_count=5&hide=html,groff,ejs,css,scss)
 
 <h3> 🤝 Connect with Me </h3>
 
@@ -34,7 +34,7 @@
 </p>
 
 #### **Visitor Count**
- ![Visitor Count](https://profile-counter.glitch.me/{linesmerrill}/count.svg)
+ ![Visitor Count](https://komarev.com/ghpvc/?username=Linesmerrill&label=Visitor%20Count&color=7A7ADB&style=flat)
 
 
 ⭐️ From [linesmerrill](https://github.com/linesmerrill)

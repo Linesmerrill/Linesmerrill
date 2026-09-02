@@ -277,7 +277,7 @@ def _pill(x: float, y: int, w: float, h: int, r: int, left: bool, right: bool) -
             f"{f'a{lr},{lr} 0 0 1 {lr},-{lr}' if lr else ''} Z")
 
 
-def card_activity(d: dict, width: int = 864) -> str:
+def card_activity(d: dict, width: int = 840) -> str:
     """Full-width activity card: 52-week heatmap, month rule, streak figures."""
     cur, longest, peak, _ = streaks(d["days"])
     today = dt.date.today()
@@ -373,7 +373,7 @@ def main() -> int:
     os.makedirs(a.out, exist_ok=True)
     for name, svg in (("stats.svg", card_stats(d)),
                       ("langs.svg", card_languages(d)),
-                      ("activity.svg", card_activity(d))):
+                      ("activity-wide.svg", card_activity(d))):
         with open(os.path.join(a.out, name), "w", encoding="utf-8") as f:
             f.write(svg)
         print(f"wrote {os.path.join(a.out, name)}")

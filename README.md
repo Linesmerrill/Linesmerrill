@@ -23,12 +23,12 @@
      committed to the 'metrics' branch. No third-party service involved. -->
 
 <p>
-  <img alt="GitHub stats" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/stats.svg" width="430" />
-  <img alt="Top languages" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/langs.svg" width="430" />
+  <img alt="GitHub stats" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/stats.svg" width="418" />
+  <img alt="Top languages" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/langs.svg" width="418" />
 </p>
 
 <p>
-  <img alt="Contribution activity" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/activity.svg" width="864" />
+  <img alt="Contribution activity" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/activity-wide.svg" width="840" />
 </p>
 
 <h3> 🤝 Connect with Me </h3>

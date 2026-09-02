@@ -11,13 +11,16 @@ on:
 permissions:
   contents: write
 
-# Pinned by SHA for reproducibility. Note the action pulls a prebuilt image
-# from ghcr by default (use_prebuilt_image), so the ref mainly pins the wrapper.
+# Generated SVGs land on the 'metrics' branch: main requires pull requests and
+# GITHUB_TOKEN cannot bypass that rule.
 #
-# plugin_achievements is deliberately absent: its query still requests Projects
-# (classic), which GitHub sunset in 2024, so it errors on every version
-# including master. plugin_habits is absent for the same reason -- it crashes
-# on non-push events ("Cannot destructure property 'author'").
+# Deliberately NOT used here:
+#   plugin_achievements - its query still requests Projects (classic), sunset
+#     by GitHub in 2024, so it errors on every version including master.
+#   plugin_habits - crashes on non-push events ("Cannot destructure 'author'").
+#   plugin_calendar - multi-year grids overflow the card and render empty days
+#     as harsh white cells.
+#   config_display: columns - leaves half of each card blank.
 env:
   ACCENT_CSS: |
     h2, h2 * { color: #7A7ADB !important; fill: #7A7ADB !important; }
@@ -26,8 +29,8 @@ jobs:
   metrics:
     runs-on: ubuntu-latest
     steps:
-      # Showpiece: identity plus the isometric commit calendar, which also
-      # surfaces streak and commits-per-day figures.
+      # Left card: identity plus the isometric calendar, which carries the
+      # streak and commits-per-day figures.
       - name: Overview
         uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d
         with:
@@ -38,14 +41,12 @@ jobs:
           template: classic
           base: header
           config_timezone: America/Phoenix
-          config_display: columns
           config_animations: yes
           extras_css: ${{ env.ACCENT_CSS }}
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
-      # Colored language proportion bars. 'recently-used' is omitted: it
-      # rendered "No recent push activity found" on the previous run.
+      # Right card: colored language proportion bars.
       - name: Languages
         uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d
         with:
@@ -62,20 +63,3 @@ jobs:
           plugin_languages_other: yes
           plugin_languages_details: percentage
           plugin_languages_ignored: html, groff, ejs, css, scss
-
-      # Every year of contributions since account creation, as heatmaps.
-      # Replaces the habits card: plugin_habits crashes on non-push events
-      # ("Cannot destructure property 'author'"), unfixed on master.
-      - name: Calendar
-        uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: Linesmerrill
-          committer_branch: metrics
-          filename: calendar.svg
-          base: ""
-          config_timezone: America/Phoenix
-          config_animations: yes
-          extras_css: ${{ env.ACCENT_CSS }}
-          plugin_calendar: yes
-          plugin_calendar_limit: 0

@@ -22,12 +22,8 @@
 <!-- Rendered by .github/workflows/metrics.yml, committed to the 'metrics' branch. -->
 
 <p align="center">
-  <img alt="GitHub overview and commit calendar" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/overview.svg" width="820" />
-</p>
-
-<p align="center">
-  <img alt="Top Languages" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/languages.svg" width="405" />
-  <img alt="Contribution calendar" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/calendar.svg" width="405" />
+  <img alt="GitHub overview and commit calendar" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/overview.svg" width="420" />
+  <img alt="Top languages" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/languages.svg" width="420" />
 </p>
 
 <h3> 🤝 Connect with Me </h3>

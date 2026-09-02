@@ -260,7 +260,9 @@ def card_languages(d: dict) -> str:
         b.append(f'<text x="{lx + 205}" y="{ly}" class="pct" text-anchor="end">'
                  f'{frac * 100:.1f}%</text>')
 
-    height = 108 + ((len(rows) + 1) // 2) * 22 + 14
+    # Match the stats card's height: inline images in the README are
+    # baseline-aligned, so a shorter card would hang lower than its neighbour.
+    height = max(108 + ((len(rows) + 1) // 2) * 22 + 14, 250)
     return card(480, height, "Languages", "\n  ".join(b))
 
 
@@ -275,7 +277,8 @@ def _pill(x: float, y: int, w: float, h: int, r: int, left: bool, right: bool) -
             f"{f'a{lr},{lr} 0 0 1 {lr},-{lr}' if lr else ''} Z")
 
 
-def card_activity(d: dict) -> str:
+def card_activity(d: dict, width: int = 864) -> str:
+    """Full-width activity card: 52-week heatmap, month rule, streak figures."""
     cur, longest, peak, _ = streaks(d["days"])
     today = dt.date.today()
     weeks = 52
@@ -291,10 +294,20 @@ def card_activity(d: dict) -> str:
     year_peak = max(window.values()) if window else 0
     cuts = [live[int(len(live) * q)] for q in (0.25, 0.5, 0.75)] if live else [1, 1, 1]
 
-    # Span exactly the 440px between the card's 20px margins.
-    step = 440 / weeks
-    cell = step - 1.8
+    pad = 20
+    step = (width - pad * 2) / weeks
+    cell = step - 2.4
+    top = 68
     b = []
+
+    # Month rule: label a column when its month differs from the one before.
+    seen = None
+    for w in range(weeks):
+        m = (start + dt.timedelta(days=w * 7)).strftime("%b")
+        if m != seen:
+            b.append(f'<text x="{pad + w * step:.1f}" y="{top - 8}" class="lab">{m}</text>')
+            seen = m
+
     for w in range(weeks):
         for dow in range(7):
             day = start + dt.timedelta(days=w * 7 + dow)
@@ -311,19 +324,21 @@ def card_activity(d: dict) -> str:
                 fill = HEAT[3]
             else:
                 fill = HEAT[4]
-            b.append(f'<rect x="{20 + w * step:.2f}" y="{54 + dow * step:.2f}" '
-                     f'width="{cell:.2f}" height="{cell:.2f}" rx="1.5" fill="{fill}"/>')
+            b.append(f'<rect x="{pad + w * step:.2f}" y="{top + dow * step:.2f}" '
+                     f'width="{cell:.2f}" height="{cell:.2f}" rx="2" fill="{fill}"/>')
 
-    grid_bottom = 54 + 7 * step
-    b.append(f'<text x="20" y="{grid_bottom + 18:.0f}" class="lab">'
+    grid_bottom = top + 7 * step
+    b.append(f'<text x="{pad}" y="{grid_bottom + 20:.0f}" class="lab">'
              f'Past 12 months &#183; peak {comma(year_peak)} in a day</text>')
     tiles = [(comma(cur), "Current streak"),
              (comma(longest), "Longest streak"),
-             (comma(peak), "Best day, all time")]
-    ty = int(grid_bottom + 54)
+             (comma(peak), "Best day, all time"),
+             (comma(d["contributed"]), "Repositories contributed to")]
+    ty = int(grid_bottom + 58)
+    col = (width - pad * 2) / len(tiles)
     for i, (v, l) in enumerate(tiles):
-        b.append(tile(20 + i * 153, ty, v, l))
-    return card(480, ty + 34, "Contribution activity", "\n  ".join(b))
+        b.append(tile(int(pad + i * col), ty, v, l))
+    return card(width, ty + 34, "Contribution activity", "\n  ".join(b))
 
 
 def main() -> int:

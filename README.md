@@ -26,7 +26,7 @@
 
 <p align="center">
   <img alt="Top Languages" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/languages.svg" width="405" />
-  <img alt="Coding Habits" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/habits.svg" width="405" />
+  <img alt="Contribution calendar" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/calendar.svg" width="405" />
 </p>
 
 <h3> 🤝 Connect with Me </h3>

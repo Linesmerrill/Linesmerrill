@@ -11,21 +11,21 @@ on:
 permissions:
   contents: write
 
-# Generated SVGs are committed to the 'metrics' branch, not main:
-# main requires pull requests, and GITHUB_TOKEN cannot bypass that rule.
+# Pinned to a master commit rather than v3.34: the last release (2023) has an
+# achievements plugin that queries Projects (classic), which GitHub sunset in
+# 2024, so it fails outright. Master fixes it. Pinned by SHA, not branch, to
+# stay reproducible.
 env:
   ACCENT_CSS: |
-    h2 { color: #7A7ADB !important; }
-    .achievement .title { color: #7A7ADB !important; }
+    h2, h2 * { color: #7A7ADB !important; fill: #7A7ADB !important; }
 
 jobs:
   metrics:
     runs-on: ubuntu-latest
     steps:
-      # Showpiece card: identity, achievement medals, and the isometric
-      # commit calendar. Leads with graphics rather than stat lists.
+      # Showpiece: identity, ranked achievement medals, isometric commit calendar.
       - name: Overview
-        uses: lowlighter/metrics@v3.34
+        uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: Linesmerrill
@@ -44,9 +44,10 @@ jobs:
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
 
-      # Languages: colored proportion bars, most-used plus recently-used.
+      # Colored language proportion bars. 'recently-used' is omitted: it
+      # rendered "No recent push activity found" on the previous run.
       - name: Languages
-        uses: lowlighter/metrics@v3.34
+        uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: Linesmerrill
@@ -59,25 +60,22 @@ jobs:
           plugin_languages: yes
           plugin_languages_limit: 8
           plugin_languages_other: yes
-          plugin_languages_sections: most-used, recently-used
           plugin_languages_details: percentage
           plugin_languages_ignored: html, groff, ejs, css, scss
 
-      # Coding habits: SVG time-of-day and day-of-week charts.
-      - name: Habits
-        uses: lowlighter/metrics@v3.34
+      # Every year of contributions since account creation, as heatmaps.
+      # Replaces the habits card: plugin_habits crashes on non-push events
+      # ("Cannot destructure property 'author'"), unfixed on master.
+      - name: Calendar
+        uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: Linesmerrill
           committer_branch: metrics
-          filename: habits.svg
+          filename: calendar.svg
           base: ""
           config_timezone: America/Phoenix
           config_animations: yes
           extras_css: ${{ env.ACCENT_CSS }}
-          plugin_habits: yes
-          plugin_habits_from: 200
-          plugin_habits_days: 14
-          plugin_habits_facts: yes
-          plugin_habits_charts: yes
-          plugin_habits_charts_type: graph
+          plugin_calendar: yes
+          plugin_calendar_limit: 0

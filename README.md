@@ -19,11 +19,16 @@
 
 <h3> 📊 GitHub Metrics </h3>
 
-<!-- Rendered by .github/workflows/metrics.yml, committed to the 'metrics' branch. -->
+<!-- Rendered by scripts/generate_cards.py via .github/workflows/metrics.yml,
+     committed to the 'metrics' branch. No third-party service involved. -->
 
 <p align="center">
-  <img alt="GitHub overview and commit calendar" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/overview.svg" width="420" />
+  <img alt="GitHub stats" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/stats.svg" width="420" />
   <img alt="Top languages" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/languages.svg" width="420" />
+</p>
+
+<p align="center">
+  <img alt="Contribution activity" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/activity.svg" width="420" />
 </p>
 
 <h3> 🤝 Connect with Me </h3>

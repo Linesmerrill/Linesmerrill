@@ -6,60 +6,42 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [".github/workflows/metrics.yml"]
+    paths:
+      - ".github/workflows/metrics.yml"
+      - "scripts/generate_cards.py"
 
 permissions:
   contents: write
 
-# Generated SVGs land on the 'metrics' branch: main requires pull requests and
-# GITHUB_TOKEN cannot bypass that rule.
-#
-# Deliberately NOT used here:
-#   plugin_achievements - its query still requests Projects (classic), sunset
-#     by GitHub in 2024, so it errors on every version including master.
-#   plugin_habits - crashes on non-push events ("Cannot destructure 'author'").
-#   plugin_calendar - multi-year grids overflow the card and render empty days
-#     as harsh white cells.
-#   config_display: columns - leaves half of each card blank.
-env:
-  ACCENT_CSS: |
-    h2, h2 * { color: #7A7ADB !important; fill: #7A7ADB !important; }
-
 jobs:
-  metrics:
+  cards:
     runs-on: ubuntu-latest
     steps:
-      # Left card: identity plus the isometric calendar, which carries the
-      # streak and commits-per-day figures.
-      - name: Overview
-        uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: Linesmerrill
-          committer_branch: metrics
-          filename: overview.svg
-          template: classic
-          base: header
-          config_timezone: America/Phoenix
-          config_animations: yes
-          extras_css: ${{ env.ACCENT_CSS }}
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
+      - uses: actions/checkout@v4
 
-      # Right card: colored language proportion bars.
-      - name: Languages
-        uses: lowlighter/metrics@366f8b9dfe3a59656c67d5dcad9950f59c9bc96d
-        with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          user: Linesmerrill
-          committer_branch: metrics
-          filename: languages.svg
-          base: ""
-          config_timezone: America/Phoenix
-          config_animations: yes
-          extras_css: ${{ env.ACCENT_CSS }}
-          plugin_languages: yes
-          plugin_languages_limit: 8
-          plugin_languages_other: yes
-          plugin_languages_details: percentage
-          plugin_languages_ignored: html, groff, ejs, css, scss
+      - name: Render cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
+        run: |
+          python3 scripts/generate_cards.py \
+            --user Linesmerrill \
+            --out out \
+            --ignore "html,css,scss,ejs,groff,makefile,dockerfile,shell,batchfile"
+
+      # Cards live on the 'metrics' branch: main requires pull requests, and
+      # GITHUB_TOKEN cannot bypass that rule.
+      - name: Publish to metrics branch
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin metrics
+          git worktree add ../pub origin/metrics --detach
+          cp out/*.svg ../pub/
+          cd ../pub
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No change in rendered cards."
+          else
+            git commit -m "Update profile cards"
+            git push origin HEAD:metrics
+          fi

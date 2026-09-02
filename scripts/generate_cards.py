@@ -372,7 +372,7 @@ def main() -> int:
 
     os.makedirs(a.out, exist_ok=True)
     for name, svg in (("stats.svg", card_stats(d)),
-                      ("langs.svg", card_languages(d)),
+                      ("languages-bar.svg", card_languages(d)),
                       ("activity-wide.svg", card_activity(d))):
         with open(os.path.join(a.out, name), "w", encoding="utf-8") as f:
             f.write(svg)

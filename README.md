@@ -16,13 +16,15 @@
 - 🛢️ &nbsp; MySql | S3 | Couchbase | MongoDB
 - 🔧 &nbsp; IntelliJ | Visual Studio Code | Git
 
-<br>
+<h3> 📊 GitHub Metrics </h3>
 
-[![GitHub Stats](https://github-readme-stats-sigma-five.vercel.app/api?username=Linesmerrill&include_all_commits=true&count_private=true&show_icons=true&line_height=20&title_color=7A7ADB&icon_color=2234AE&text_color=D3D3D3&bg_color=0,000000,130F40)](https://github-readme-stats-sigma-five.vercel.app/api?username=linesmerrill&include_all_commits=true&count_private=true&show_icons=true&line_height=20&title_color=7A7ADB&icon_color=2234AE&text_color=D3D3D3&bg_color=0,000000,130F40)
+<!-- Rendered by .github/workflows/metrics.yml and committed to this repo. -->
+<!-- No third-party service in the request path, so these cannot rate-limit or 402. -->
 
-</br>
+<img alt="GitHub Overview" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/main/metrics/overview.svg" width="470" />
+<img alt="Top Languages" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/main/metrics/languages.svg" width="470" />
 
-[![Top Langs](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Linesmerrill&layout=compact&text_color=daf7dc&bg_color=151515&&langs_count=5&hide=html,groff,ejs,css,scss)](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Linesmerrill&layout=compact&text_color=daf7dc&bg_color=151515&&langs_count=5&hide=html,groff,ejs,css,scss)
+<img alt="Contribution Calendar" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/main/metrics/calendar.svg" width="470" />
 
 <h3> 🤝 Connect with Me </h3>
 

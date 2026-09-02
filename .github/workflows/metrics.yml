@@ -1,0 +1,57 @@
+name: Metrics
+
+on:
+  # Refresh a few times a day
+  schedule:
+    - cron: "0 */6 * * *"
+  # Allow manual runs from the Actions tab
+  workflow_dispatch:
+  # Regenerate when this workflow changes
+  push:
+    branches: [main]
+    paths: [".github/workflows/metrics.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    steps:
+      # Overview card: profile summary, activity, lines of code changed
+      - name: Overview
+        uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: Linesmerrill
+          filename: metrics/overview.svg
+          template: classic
+          base: header, activity, community, repositories
+          config_timezone: America/Phoenix
+          plugin_lines: yes
+
+      # Languages card: replaces the old top-langs widget
+      - name: Languages
+        uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: Linesmerrill
+          filename: metrics/languages.svg
+          base: ""
+          config_timezone: America/Phoenix
+          plugin_languages: yes
+          plugin_languages_limit: 6
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_ignored: html, groff, ejs, css, scss
+
+      # Isometric commit calendar: full-year contribution activity
+      - name: Calendar
+        uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: Linesmerrill
+          filename: metrics/calendar.svg
+          base: ""
+          config_timezone: America/Phoenix
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year

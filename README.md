@@ -3,25 +3,26 @@
 
 <h3> 👨🏼‍💻 About Me </h3>
 
-- 🔭 &nbsp; I'm currently learning about LLMs, Vector Search, and AI Automation Pipelines.
-- 🤔 &nbsp; Exploring new technologies and developing software solutions.
-- 💼 &nbsp; Golang, Kotlin, Javascript, Java developer - Mostly leveraging AI to write all code now'a days.
-- 🌱 &nbsp; Enthusiast in Fast, Reliable, Testable code.
-- 🍫 &nbsp; Aficionado for sugary treats, especially snickers
+- 🔭 &nbsp; Building distributed systems, backend services, and AI-powered developer tooling.
+- 🤖 &nbsp; Working with LLMs, agentic workflows, RAG, and vector search.
+- 💼 &nbsp; Golang, Kotlin, Java, Javascript, and Python.
+- 🌱 &nbsp; Focused on fast, reliable, observable, and testable software.
+- 🍫 &nbsp; Aficionado for sugary treats, especially Snickers.
 
 <h3> 🛠️ Tech Stack </h3>
 
-- 💻 &nbsp; Claude Code: Golang | Kotlin | Javascript | Python
-- 🌐 &nbsp; K8s | Openshift
-- 🛢️ &nbsp; MySql | S3 | Couchbase | MongoDB
-- 🔧 &nbsp; IntelliJ | Visual Studio Code | Git
+- 💻 &nbsp; Go | Kotlin | Java | Javascript | Python
+- 🤖 &nbsp; Claude Code | LLM APIs | RAG | Vector Search
+- 🌐 &nbsp; Kubernetes | OpenShift | Docker
+- 🛢️ &nbsp; MySQL | Couchbase | MongoDB | S3
+- 🔧 &nbsp; Git | IntelliJ | Visual Studio Code
 
 <h3> 📊 GitHub Metrics </h3>
 
 <!-- Rendered by .github/workflows/metrics.yml, committed to the 'metrics' branch. -->
 
 <p align="center">
-  <img alt="Achievements and contribution calendar" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/overview.svg" width="820" />
+  <img alt="GitHub overview and commit calendar" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/overview.svg" width="820" />
 </p>
 
 <p align="center">

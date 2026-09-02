@@ -1,12 +1,9 @@
 name: Metrics
 
 on:
-  # Refresh a few times a day
   schedule:
     - cron: "0 */6 * * *"
-  # Allow manual runs from the Actions tab
   workflow_dispatch:
-  # Regenerate when this workflow changes
   push:
     branches: [main]
     paths: [".github/workflows/metrics.yml"]
@@ -14,11 +11,19 @@ on:
 permissions:
   contents: write
 
+# Generated SVGs are committed to the 'metrics' branch, not main:
+# main requires pull requests, and GITHUB_TOKEN cannot bypass that rule.
+env:
+  ACCENT_CSS: |
+    h2 { color: #7A7ADB !important; }
+    .achievement .title { color: #7A7ADB !important; }
+
 jobs:
   metrics:
     runs-on: ubuntu-latest
     steps:
-      # Overview card: profile summary, activity, community, repositories
+      # Showpiece card: identity, achievement medals, and the isometric
+      # commit calendar. Leads with graphics rather than stat lists.
       - name: Overview
         uses: lowlighter/metrics@v3.34
         with:
@@ -27,10 +32,19 @@ jobs:
           committer_branch: metrics
           filename: overview.svg
           template: classic
-          base: header, activity, community, repositories
+          base: header
           config_timezone: America/Phoenix
+          config_display: columns
+          config_animations: yes
+          extras_css: ${{ env.ACCENT_CSS }}
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+          plugin_achievements_threshold: C
+          plugin_achievements_secrets: yes
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
 
-      # Languages card: replaces the old top-langs widget
+      # Languages: colored proportion bars, most-used plus recently-used.
       - name: Languages
         uses: lowlighter/metrics@v3.34
         with:
@@ -40,20 +54,30 @@ jobs:
           filename: languages.svg
           base: ""
           config_timezone: America/Phoenix
+          config_animations: yes
+          extras_css: ${{ env.ACCENT_CSS }}
           plugin_languages: yes
-          plugin_languages_limit: 6
-          plugin_languages_details: bytes-size, percentage
+          plugin_languages_limit: 8
+          plugin_languages_other: yes
+          plugin_languages_sections: most-used, recently-used
+          plugin_languages_details: percentage
           plugin_languages_ignored: html, groff, ejs, css, scss
 
-      # Isometric commit calendar: full-year contribution activity
-      - name: Calendar
+      # Coding habits: SVG time-of-day and day-of-week charts.
+      - name: Habits
         uses: lowlighter/metrics@v3.34
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: Linesmerrill
           committer_branch: metrics
-          filename: calendar.svg
+          filename: habits.svg
           base: ""
           config_timezone: America/Phoenix
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
+          config_animations: yes
+          extras_css: ${{ env.ACCENT_CSS }}
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          plugin_habits_charts_type: graph

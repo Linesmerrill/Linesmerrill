@@ -24,7 +24,7 @@
 
 <p align="center">
   <img alt="GitHub stats" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/stats.svg" width="420" />
-  <img alt="Top languages" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/languages.svg" width="420" />
+  <img alt="Top languages" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/langs.svg" width="420" />
 </p>
 
 <p align="center">

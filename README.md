@@ -18,13 +18,13 @@
 
 <h3> 📊 GitHub Metrics </h3>
 
-<!-- Rendered by .github/workflows/metrics.yml and committed to this repo. -->
+<!-- Rendered by .github/workflows/metrics.yml, committed to the 'metrics' branch. -->
 <!-- No third-party service in the request path, so these cannot rate-limit or 402. -->
 
-<img alt="GitHub Overview" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/main/metrics/overview.svg" width="470" />
-<img alt="Top Languages" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/main/metrics/languages.svg" width="470" />
+<img alt="GitHub Overview" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/overview.svg" width="470" />
+<img alt="Top Languages" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/languages.svg" width="470" />
 
-<img alt="Contribution Calendar" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/main/metrics/calendar.svg" width="470" />
+<img alt="Contribution Calendar" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/calendar.svg" width="470" />
 
 <h3> 🤝 Connect with Me </h3>
 

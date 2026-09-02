@@ -18,17 +18,17 @@ jobs:
   metrics:
     runs-on: ubuntu-latest
     steps:
-      # Overview card: profile summary, activity, lines of code changed
+      # Overview card: profile summary, activity, community, repositories
       - name: Overview
         uses: lowlighter/metrics@v3.34
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: Linesmerrill
-          filename: metrics/overview.svg
+          committer_branch: metrics
+          filename: overview.svg
           template: classic
           base: header, activity, community, repositories
           config_timezone: America/Phoenix
-          plugin_lines: yes
 
       # Languages card: replaces the old top-langs widget
       - name: Languages
@@ -36,7 +36,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: Linesmerrill
-          filename: metrics/languages.svg
+          committer_branch: metrics
+          filename: languages.svg
           base: ""
           config_timezone: America/Phoenix
           plugin_languages: yes
@@ -50,7 +51,8 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: Linesmerrill
-          filename: metrics/calendar.svg
+          committer_branch: metrics
+          filename: calendar.svg
           base: ""
           config_timezone: America/Phoenix
           plugin_isocalendar: yes

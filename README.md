@@ -22,12 +22,12 @@
 <!-- Rendered by scripts/generate_cards.py via .github/workflows/metrics.yml,
      committed to the 'metrics' branch. No third-party service involved. -->
 
-<p align="center">
+<p>
   <img alt="GitHub stats" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/stats.svg" width="420" />
   <img alt="Top languages" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/langs.svg" width="420" />
 </p>
 
-<p align="center">
+<p>
   <img alt="Contribution activity" src="https://raw.githubusercontent.com/Linesmerrill/Linesmerrill/metrics/activity.svg" width="420" />
 </p>
 

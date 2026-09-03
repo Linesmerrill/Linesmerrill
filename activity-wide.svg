@@ -386,7 +386,8 @@
   <rect x="804.62" y="83.38" width="12.98" height="12.98" rx="2" fill="#9d95f5"/>
   <rect x="804.62" y="98.77" width="12.98" height="12.98" rx="2" fill="#9d95f5"/>
   <rect x="804.62" y="114.15" width="12.98" height="12.98" rx="2" fill="#9d95f5"/>
-  <text x="20" y="196" class="lab">Past 12 months &#183; peak 188 in a day</text>
+  <rect x="804.62" y="129.54" width="12.98" height="12.98" rx="2" fill="#161b22"/>
+  <text x="20" y="196" class="lab">Past 12 months &#183; peak 192 in a day</text>
   <text x="20" y="233" class="val">39</text><text x="20" y="249" class="lab">Current streak</text>
   <text x="220" y="233" class="val">96</text><text x="220" y="249" class="lab">Longest streak</text>
   <text x="420" y="233" class="val">1,067</text><text x="420" y="249" class="lab">Best day, all time</text>

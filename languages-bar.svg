@@ -13,10 +13,10 @@
 <g class="t">
   <rect x="20" y="20" width="3" height="13" rx="1.5" fill="#7a7adb"/>
   <text x="31" y="31" class="title">Languages</text>
-  <path d="M24.0,56 H271.8  V78  H24.0 a4,4 0 0 1 -4,-4 V60 a4,4 0 0 1 4,-4 Z" fill="#3987e5"/>
-  <rect x="273.8" y="56" width="127.0" height="22" fill="#d95926"/>
-  <rect x="402.7" y="56" width="24.7" height="22" fill="#199e70"/>
-  <rect x="429.5" y="56" width="13.5" height="22" fill="#c98500"/>
+  <path d="M24.0,56 H271.7  V78  H24.0 a4,4 0 0 1 -4,-4 V60 a4,4 0 0 1 4,-4 Z" fill="#3987e5"/>
+  <rect x="273.7" y="56" width="126.9" height="22" fill="#d95926"/>
+  <rect x="402.6" y="56" width="24.8" height="22" fill="#199e70"/>
+  <rect x="429.4" y="56" width="13.6" height="22" fill="#c98500"/>
   <rect x="445.0" y="56" width="4.9" height="22" fill="#d55181"/>
   <path d="M451.8,56 H456.0 a4,4 0 0 1 4,4 V74 a4,4 0 0 1 -4,4 H451.8  V56  Z" fill="#6e7681"/>
   <rect x="20" y="100" width="9" height="9" rx="2" fill="#3987e5"/>
@@ -30,7 +30,7 @@
   <text x="225" y="130" class="pct" text-anchor="end">5.8%</text>
   <rect x="240" y="122" width="9" height="9" rx="2" fill="#c98500"/>
   <text x="255" y="130" class="leg">TypeScript</text>
-  <text x="445" y="130" class="pct" text-anchor="end">3.1%</text>
+  <text x="445" y="130" class="pct" text-anchor="end">3.2%</text>
   <rect x="20" y="144" width="9" height="9" rx="2" fill="#d55181"/>
   <text x="35" y="152" class="leg">Python</text>
   <text x="225" y="152" class="pct" text-anchor="end">1.1%</text>

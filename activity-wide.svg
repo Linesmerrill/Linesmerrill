@@ -185,7 +185,7 @@
   <rect x="358.46" y="98.77" width="12.98" height="12.98" rx="2" fill="#6a5fd0"/>
   <rect x="358.46" y="114.15" width="12.98" height="12.98" rx="2" fill="#6a5fd0"/>
   <rect x="358.46" y="129.54" width="12.98" height="12.98" rx="2" fill="#9d95f5"/>
-  <rect x="358.46" y="144.92" width="12.98" height="12.98" rx="2" fill="#9d95f5"/>
+  <rect x="358.46" y="144.92" width="12.98" height="12.98" rx="2" fill="#6a5fd0"/>
   <rect x="358.46" y="160.31" width="12.98" height="12.98" rx="2" fill="#453f9e"/>
   <rect x="373.85" y="68.00" width="12.98" height="12.98" rx="2" fill="#2b2a63"/>
   <rect x="373.85" y="83.38" width="12.98" height="12.98" rx="2" fill="#6a5fd0"/>
@@ -291,7 +291,7 @@
   <rect x="589.23" y="114.15" width="12.98" height="12.98" rx="2" fill="#453f9e"/>
   <rect x="589.23" y="129.54" width="12.98" height="12.98" rx="2" fill="#6a5fd0"/>
   <rect x="589.23" y="144.92" width="12.98" height="12.98" rx="2" fill="#9d95f5"/>
-  <rect x="589.23" y="160.31" width="12.98" height="12.98" rx="2" fill="#9d95f5"/>
+  <rect x="589.23" y="160.31" width="12.98" height="12.98" rx="2" fill="#6a5fd0"/>
   <rect x="604.62" y="68.00" width="12.98" height="12.98" rx="2" fill="#2b2a63"/>
   <rect x="604.62" y="83.38" width="12.98" height="12.98" rx="2" fill="#2b2a63"/>
   <rect x="604.62" y="98.77" width="12.98" height="12.98" rx="2" fill="#6a5fd0"/>
@@ -388,7 +388,7 @@
   <rect x="804.62" y="98.77" width="12.98" height="12.98" rx="2" fill="#2b2a63"/>
   <rect x="804.62" y="114.15" width="12.98" height="12.98" rx="2" fill="#453f9e"/>
   <rect x="804.62" y="129.54" width="12.98" height="12.98" rx="2" fill="#453f9e"/>
-  <rect x="804.62" y="144.92" width="12.98" height="12.98" rx="2" fill="#6a5fd0"/>
+  <rect x="804.62" y="144.92" width="12.98" height="12.98" rx="2" fill="#9d95f5"/>
   <rect x="804.62" y="160.31" width="12.98" height="12.98" rx="2" fill="#161b22"/>
   <text x="20" y="196" class="lab">Past 12 months &#183; peak 262 in a day</text>
   <text x="20" y="233" class="val">48</text><text x="20" y="249" class="lab">Current streak</text>

@@ -15,7 +15,7 @@
   <text x="31" y="31" class="title">Languages</text>
   <path d="M24.0,56 H244.9  V78  H24.0 a4,4 0 0 1 -4,-4 V60 a4,4 0 0 1 4,-4 Z" fill="#3987e5"/>
   <rect x="246.9" y="56" width="113.2" height="22" fill="#d95926"/>
-  <rect x="362.1" y="56" width="46.2" height="22" fill="#199e70"/>
+  <rect x="362.0" y="56" width="46.2" height="22" fill="#199e70"/>
   <rect x="410.3" y="56" width="20.1" height="22" fill="#c98500"/>
   <rect x="432.3" y="56" width="12.3" height="22" fill="#d55181"/>
   <rect x="446.6" y="56" width="4.3" height="22" fill="#008300"/>
